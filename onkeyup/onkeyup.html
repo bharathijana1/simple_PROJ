@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OnKeyUp</title>
+    <link rel="stylesheet" href="onkeyup.css">
+    
+</head>
+<body>
+    <div id="container">
+    <input type="text" name="box" id="box" onkeyup="change()">
+    <div id="result">result</div>
+</div>
+
+<script>
+    var box = document.getElementById("box");
+    var result = document.getElementById("result")
+
+    function change(){
+        result.innerHTML = "<h1>" +box.value +"</h1>";
+        result.style.width = "500px";
+    }
+</script>
+
+
+</body>
+</html>

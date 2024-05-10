@@ -1,0 +1,37 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#texts,#buttons{
+    padding: 10px;
+    margin: 10px;
+}
+#texts #input{
+    padding: 10px;
+    font-size: 1em;
+    outline: none;
+
+}
+#buttons button{
+    padding: 10px;
+    width: 200px;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: linear-gradient(rgb(119, 181, 240), rgb(25, 87, 179,30%),rgb(119, 181, 240));
+    outline: none;
+
+}
+
+#output{
+    padding: 15px;
+    margin: 10px;
+    margin-left: 30px;
+}
+#heading h1{
+    text-align: left;
+    padding: 10px;
+    margin: 10px;
+}

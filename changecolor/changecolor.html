@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change color button</title>
+    <link rel="stylesheet" href="changecolorstyle.css" />
+  </head>
+  <body>
+    <div id="container">
+      <h1>Click the button to see the color</h1>
+      <div id="btnchangecolor">
+        <button class="btn" id="changecolor1" onclick="change1()">Click</button>
+        <button class="btn" id="changecolor2" onclick="change2()">Click</button>
+        <button class="btn" id="changecolor3" onclick="change3()">Click</button>
+        <button class="btn" id="changecolor4" onclick="change4()">Click</button>
+        <button class="btn" id="changecolor5" onclick="change5()">Click</button>
+        <button class="btn" id="changecolor6" onclick="change6()">Click</button>
+        <button class="btn" id="changecolor7" onclick="change7()">Click</button>
+        <button class="btn" id="changecolor8" onclick="change8()">Click</button>
+        <button class="btn" id="changecolor9" onclick="change9()">Click</button>
+        <button class="btn" id="changecolor10" onclick="change10()">
+          Click
+        </button>
+        <button class="btn" id="changecolor11" onclick="change11()">
+          Click
+        </button>
+        <button class="btn" id="changecolor12" onclick="change12()">
+          Click
+        </button>
+      </div>
+    </div>
+
+    <script>
+      var changecolor1 = document.getElementById("changecolor1");
+      var changecolor2 = document.getElementById("changecolor2");
+      var changecolor3 = document.getElementById("changecolor3");
+      var changecolor4 = document.getElementById("changecolor4");
+      var changecolor5 = document.getElementById("changecolor5");
+      var changecolor6 = document.getElementById("changecolor6");
+      var changecolor7 = document.getElementById("changecolor7");
+      var changecolor8 = document.getElementById("changecolor8");
+      var changecolor9 = document.getElementById("changecolor9");
+      var changecolor10 = document.getElementById("changecolor10");
+      var changecolor11 = document.getElementById("changecolor11");
+      var changecolor12 = document.getElementById("changecolor12");
+
+      function change1() {
+        changecolor1.style.backgroundColor = "Red";
+        changecolor1.textContent = "Red";
+      }
+      function change2() {
+        changecolor2.style.backgroundColor = "blue";
+        changecolor2.textContent = "blue";
+      }
+      function change3() {
+        changecolor3.style.backgroundColor = "black";
+        changecolor3.style.color = "white";
+        changecolor3.textContent = "black";
+      }
+      function change4() {
+        changecolor4.style.backgroundColor = "yellow";
+        changecolor4.textContent = "yellow";
+      }
+      function change5() {
+        changecolor5.style.backgroundColor = "green";
+        changecolor5.textContent = "green";
+      }
+      function change6() {
+        changecolor6.style.backgroundColor = "brown";
+        changecolor6.textContent = "brown";
+      }
+      function change7() {
+        changecolor7.style.backgroundColor = "rgb(255, 0, 128)";
+        changecolor7.textContent = "Pink";
+      }
+      function change8() {
+        changecolor8.style.backgroundColor = "rgb(9, 51, 9)";
+        changecolor8.textContent = "Dark green";
+      }
+      function change9() {
+        changecolor9.style.backgroundColor = "orange";
+        changecolor9.textContent = "orange";
+      }
+      function change10() {
+        changecolor10.style.backgroundColor = "chartreuse";
+        changecolor10.textContent = "Green yellow";
+      }
+      function change11() {
+        changecolor11.style.backgroundColor = "rgb(66, 18, 66)";
+        changecolor11.textContent = "Voilet";
+      }
+      function change12() {
+        changecolor12.style.backgroundColor = "rgb(12, 157, 214)";
+        changecolor12.textContent = "Sky Blue";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>word count</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="word-calculate"></div>
+    <div id="heading">
+        <h1>Type a sentence</h1>
+    </div>
+    <div id="texts">
+        <textarea id="input" cols="30" rows="7" placeholder="Type something"></textarea>
+    </div>
+    <div id="buttons">
+        <button onclick="count()">count of words</button>
+    </div>
+    <div id="output">
+        <div id="result"></div>
+    </div>
+
+
+
+    <script>
+         function count(){
+            var word = document.getElementById("input").value;
+            var result = document.getElementById("result");
+            var arr = word.split(' ');
+            console.log(arr);
+            result.innerHTML = "<h1>" + arr.length + "</h1>";
+        }
+
+    </script>
+    
+</body>
+</html>
