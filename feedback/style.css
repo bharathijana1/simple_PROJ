@@ -1,0 +1,47 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#feedback h1 {
+    text-align: center;
+    color: rgb(71, 4, 71);
+    padding: 10px;
+    margin: 10px;
+  }
+  #feedback #feedbackbtn {
+    text-align: center;
+    margin: 10px;
+  }
+  #feedbackbtn button {
+    width: 140px;
+    background: linear-gradient(rgb(178, 236, 247), rgb(17, 88, 116));
+    font-size: 1em;
+    text-transform: capitalize;
+  }
+  #feedback h3 {
+    margin: 20px;
+    padding: 15px;
+    color: rgb(148, 1, 148);
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .submitt {
+    text-align: center;
+  }
+  .submitt button {
+    background: linear-gradient(rgb(250, 254, 255), rgb(127, 188, 212));
+    width: 170px;
+    margin-top: 20px;
+    color: rgb(2, 2, 128);
+    text-transform: uppercase;
+    border-radius: 10px;
+    border: 2px solid rgb(4, 4, 143);
+  }
+  button{
+    padding: 20px;
+    margin: 10px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  

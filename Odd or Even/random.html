@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="input">random</h1>
+    <button onclick="odd()">odd</button>
+    <button onclick="even()">even</button>
+    <h2 id="result"></h2>
+
+
+
+
+    <script>
+
+        var input = document.getElementById("input");
+        var a = Math.random();
+        var num = console.log(Math.floor(a*100));
+        input.innerHTML = Math.floor(a*100);
+
+        var result = document.getElementById("result")
+
+        function even(){
+            if((num % 2) == 0){
+                result.innerHTML = "correct";
+                console.log("even");
+                
+
+            }
+            // else{
+            //     result.innerHTML = "wrong"
+            //     console.log("odd");
+
+            // }
+
+        }
+        function odd(){
+            if((num % 2) != 0){
+                result.innerHTML = "correctgreen";
+                console.log("odd");
+
+            }
+
+        }
+    
+        // function ref(){
+        //     var input = document.getElementById("input");
+        // var a = Math.random();
+        // var num = console.log(Math.floor(a*100));
+        // input.innerHTML = Math.floor(a*100);
+
+        // var result = document.getElementById("result")
+
+        // function even(){
+        //     if((num % 2) == 0){
+        //         result.innerHTML = "correct";
+        //         console.log(num);
+
+        //     }
+        //     else{
+        //         result.innerHTML = "wrong"
+        //         console.log(num);
+
+        //     }
+
+        // }
+        // function odd(){
+        //     if(num % 2 != 0){
+        //         result.innerHTML = "correct";
+        //         console.log(num);
+
+        //     }
+        //     else{
+        //         result.innerHTML = "wrong"
+        //         console.log(num);
+
+        //     }
+
+        // }
+        // }
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+</body>
+</html>

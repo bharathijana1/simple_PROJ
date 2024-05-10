@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>celsius to fahrenheit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    
+    <h1>Celsius to Fahrenheit</h1>
+    <div>
+    <input type="text" name="input" id="input" placeholder="Enter celsius value" required>
+    </div>
+    <div class="btn">
+    <button type="submit" onclick="convert()">Covert celsius to fahrenheit</button>
+    </div>
+    <div id="result">
+
+    </div>
+
+    <div class="back">
+        <a href="index.html">back</a>
+    </div>
+
+
+    <script>
+        function convert(){
+
+            const celsiusVal=Number(document.getElementById("input").value);
+            const result = document.getElementById("result");
+
+            if((celsiusVal == "")){
+                alert("Pls enter a number");
+             }
+            
+            const fahrenheitVal = (celsiusVal*9/5) + 32;
+            result.innerHTML = "<h3>" + fahrenheitVal.toFixed(2) + " Fahrenheit" + "</h3>";
+        }
+
+
+    </script>
+
+
+
+</body>
+</html>

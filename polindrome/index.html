@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to check a string polindrome</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+    
+    <h1>palindrome or not</h1>
+    <div>
+    <input type="text" name="input" id="input" placeholder="Enter a String" required>
+    </div>
+    <div>
+    <button type="submit" onclick="check(input)">polindrome or not</button>
+    </div>
+    <div id="result">
+
+    </div>
+
+    </div>
+
+    <script>
+            var input = document.getElementById("input");
+            var ans = document.getElementById("result");
+
+            function check(input){
+                input1 = input.value;
+            let reverseword = input1.split("").reverse().join("");
+
+            if(input1 == reverseword){
+                console.log("polindrome");
+                ans.innerHTML = "<h3>" + " polindrome" + "</h3>";
+            }
+            
+    
+            else{
+                ans.innerHTML = "<h4>" + " not polindrome" + "</h4>";
+                console.log("not polindrome")
+                    // ans.innerHTML = value + "not polindrome"
+            }
+        }
+
+    </script>
+
+
+
+</body>
+</html>

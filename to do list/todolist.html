@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="heading">
+    <h1>TO DO LIST</h1>
+</div>
+    <div id="rowadd">
+        <div id="input">
+        <input type="text" name="inputdata" id="inputdata" required>
+    </div>
+    <div id="btn">
+        <button onclick="addingrow()">add</button>
+    </div>
+    </div>
+
+
+
+    <script>
+
+
+
+        function addingrow(){
+            
+        var inputs = document.getElementById("inputdata").value;
+            // creating a h2 element
+        var inputdatacreate = document.createElement("div")
+        // datas given for h2 element data from the input box
+        inputdatacreate.innerHTML = "<h1>" + inputdata.value + "<button onclick='deletebtn(event)'>delete</button>" + "</h1>";
+            // selectind div for adding the datas from the input
+        var rowadd = document.getElementById("rowadd");
+            // insert the created data inside the div
+        rowadd.append(inputdatacreate);
+        inputs.value = ' ';
+
+
+        }
+            // detele the created data
+         function deletebtn(event){
+            event.target.parentElement.remove();
+
+         }
+
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="feedback">
+        <h1>Feedback about this page</h1>
+        <h3 id="feed">Kindly select your feedback</h3>
+        <div id="feedbackbtn">
+          <button onclick="update(event)">good</button>
+          <button onclick="update(event)">very good</button>
+          <button onclick="update(event)">bad</button>
+          <button onclick="update(event)">very bad</button>
+        </div>
+        <div class="submitt">
+          <button id="submit" onclick="sucess()">submit</button>
+        </div>
+    </div>
+    
+
+    <script>
+      var h3 = document.getElementById("feed");
+      function update(event) {
+        h3.textContent = event.target.textContent;
+      }
+      var submit = document.getElementById("submit");
+      function sucess() {
+        alert("succesfully submitted");
+      }
+
+
+    </script>
+    
+</body>
+</html>
