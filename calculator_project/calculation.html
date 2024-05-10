@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation</title>
+    <link rel="stylesheet" href="caculationstyle.css">
+</head>
+<body>
+    <div id="container">
+        <div id="inputs">
+        <input type="text" name="num1" id="num1" placeholder="Enter a number">
+        <br>
+        <input type="text" name="num2" id="num2" placeholder="Enter a number">
+    </div>
+    <div id="buttons">
+        <button onclick="add()">Addition</button>
+        <button onclick="sub()">Subtraction</button>
+        <button onclick="multiply()">Mutiplication</button>
+        <button onclick="div()">Division</button>
+    </div>
+
+        <div id="answer"></div>
+    </div>
+
+
+
+    <script>
+        var num1 = document.getElementById("num1");
+        var num2 = document.getElementById("num2");
+        var answer = document.getElementById("answer");
+
+        function add(){
+            var total = Number(num1.value) + Number(num2.value);
+            answer.innerHTML = "<h1>Addition </h1>" + total;
+        }
+        function sub(){
+            var total = Number(num1.value) - Number(num2.value);
+            answer.innerHTML = "<h1>Subtraction </h1>" +  total;
+        }
+        function multiply(){
+            var total = Number(num1.value) * Number(num2.value);
+            answer.innerHTML = "<h1>Mutiplication</h1>" + total;
+        }
+        function div(){
+            var total = Number(num1.value) / Number(num2.value);
+            answer.innerHTML = "<h1>Division</h1>" + total;
+        }
+        
+
+    </script>
+</body>
+</html>
