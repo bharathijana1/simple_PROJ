@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="heading">
+    <h1>form validation</h1>
+    </div>
+    <div id="content">
+    <form action="submitpage.html" onsubmit="return check()" autocomplete="off">
+    <label for="name">Name<span>**</span></label>
+    <input type="text" name="name" id="name">
+    <br>
+    <label for="email">email<span>**</span></label>
+    <input type="email" name="email" id="email">
+</div>
+<div id="btn">
+    <button>login </button>
+</div>
+</form>
+</div>
+
+
+    <script>
+        function check(){
+            var name = document.getElementById("name").value;
+            var email = document.getElementById("email").value;
+            if(name == ""){
+                alert("pls enter your name");
+                return false;
+            }
+            if(email == ""){
+                alert("pls enter email");
+                return false;
+
+            }
+        }
+
+
+
+
+    </script>
+
+
+
+</body>
+</html>
