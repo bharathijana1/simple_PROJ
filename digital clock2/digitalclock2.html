@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital clock</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            color: rgb(6, 6, 75);
+            background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(169,227,221,1) 26%, rgba(0,212,255,1) 100%);
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 200px;
+            padding: 20px;
+        }
+        .wrapper{
+            padding: 10px;
+            font-size: 35px;
+        }
+        #demo{
+            font-size: 35px;
+            letter-spacing: 2px;
+            margin: 5px;
+            padding: 10px;
+        }
+        h1{
+            padding: 10px;
+            font-size: 32px;
+            color: rgb(12, 12, 131);
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Digital Clock</h1>
+
+        <p id="demo"></p>
+
+        <div class="wrapper">
+            <sapn id="hours">00</sapn>
+            <sapn>:</sapn>
+            <sapn id="mins">00</sapn>
+            <sapn>:</sapn>
+            <sapn id="secs">00</sapn>
+            <sapn id="ampm">AM</sapn>
+
+
+        </div>
+    </div>
+    <script src="digitalclock2.js"></script>
+</body>
+</html>
